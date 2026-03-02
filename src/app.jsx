@@ -5,12 +5,14 @@ import Home from './Pages/Home'
 import Auth from './Pages/Auth'
 import Checkout from './Pages/Checkout'
 import Navbar from './components/Navbar'
+import AuthProvider from './context/AuthContext'
 
 export function App() {
   
 
   return (
     <>
+      <AuthProvider>
       <div className='app'>
         <Navbar/>
         <Routes>
@@ -21,6 +23,7 @@ export function App() {
          
         </Routes>
       </div>
+      </AuthProvider>
     </>
   )
 }
