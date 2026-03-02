@@ -36,8 +36,8 @@ const Auth = () => {
     <div className="page">
       <div className="container">
         <div className="auth-container">
-           {user && <p>Logged In As : {user.email}</p>}
-            <button onClick={()=>logout()}>Logout</button>
+           {/* {user && <p>Logged In As : {user.email}</p>}
+            <button onClick={()=>logout()}>Logout</button> */}
           <h1 className="page-title">
             {mode === "signup" ? "Sign Up" : "Login"}
           </h1>
@@ -71,7 +71,7 @@ const Auth = () => {
                     },
                     maxLength:{
                         value:12,
-                        message:"Value must me atleast 12 characters"
+                        message:"Value must me atmost 12 characters"
                     }
                     
                 })} 
